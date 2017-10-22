@@ -26,6 +26,8 @@
 		0506228C1F9CBA1B0015C539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0506228E1F9CBA1B0015C539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		050622941F9CBC210015C539 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		050622951F9CBD7D0015C539 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		050622961F9CBD7D0015C539 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		15BD98B1D3A53FBA01D91A07 /* Pods-Gaffiot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gaffiot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot.release.xcconfig"; sourceTree = "<group>"; };
 		1D8506AEDC74C67BE76DF231 /* Pods_Gaffiot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gaffiot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDF5B6B4769FC5873AC7D56 /* Pods-Gaffiot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gaffiot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		050622731F9CBA1B0015C539 = {
 			isa = PBXGroup;
 			children = (
+				050622961F9CBD7D0015C539 /* LICENSE */,
+				050622951F9CBD7D0015C539 /* README.md */,
 				050622941F9CBC210015C539 /* Podfile */,
 				0506227E1F9CBA1B0015C539 /* Gaffiot */,
 				0506227D1F9CBA1B0015C539 /* Products */,
