@@ -13,6 +13,7 @@
 		050622881F9CBA1B0015C539 /* Gaffiot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 050622861F9CBA1B0015C539 /* Gaffiot.xcdatamodeld */; };
 		0506228A1F9CBA1B0015C539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050622891F9CBA1B0015C539 /* Assets.xcassets */; };
 		0506228D1F9CBA1B0015C539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0506228B1F9CBA1B0015C539 /* LaunchScreen.storyboard */; };
+		B058790C8A7730E7CE45DB66 /* Pods_Gaffiot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8506AEDC74C67BE76DF231 /* Pods_Gaffiot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,10 @@
 		050622891F9CBA1B0015C539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0506228C1F9CBA1B0015C539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0506228E1F9CBA1B0015C539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		050622941F9CBC210015C539 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		15BD98B1D3A53FBA01D91A07 /* Pods-Gaffiot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gaffiot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot.release.xcconfig"; sourceTree = "<group>"; };
+		1D8506AEDC74C67BE76DF231 /* Pods_Gaffiot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gaffiot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDF5B6B4769FC5873AC7D56 /* Pods-Gaffiot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gaffiot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B058790C8A7730E7CE45DB66 /* Pods_Gaffiot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +46,11 @@
 		050622731F9CBA1B0015C539 = {
 			isa = PBXGroup;
 			children = (
+				050622941F9CBC210015C539 /* Podfile */,
 				0506227E1F9CBA1B0015C539 /* Gaffiot */,
 				0506227D1F9CBA1B0015C539 /* Products */,
+				9551FB11665E91E3EAB07517 /* Pods */,
+				FBFA95D4238133C0EACA83C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +76,23 @@
 			path = Gaffiot;
 			sourceTree = "<group>";
 		};
+		9551FB11665E91E3EAB07517 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF5B6B4769FC5873AC7D56 /* Pods-Gaffiot.debug.xcconfig */,
+				15BD98B1D3A53FBA01D91A07 /* Pods-Gaffiot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBFA95D4238133C0EACA83C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D8506AEDC74C67BE76DF231 /* Pods_Gaffiot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 050622911F9CBA1B0015C539 /* Build configuration list for PBXNativeTarget "Gaffiot" */;
 			buildPhases = (
+				8030A98F6533C581257F1FA1 /* [CP] Check Pods Manifest.lock */,
 				050622781F9CBA1B0015C539 /* Sources */,
 				050622791F9CBA1B0015C539 /* Frameworks */,
 				0506227A1F9CBA1B0015C539 /* Resources */,
+				E81E5BB7D77487702D4B090A /* [CP] Embed Pods Frameworks */,
+				3561B9C7E8EE7963DF8736CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3561B9C7E8EE7963DF8736CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8030A98F6533C581257F1FA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E81E5BB7D77487702D4B090A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		050622781F9CBA1B0015C539 /* Sources */ = {
@@ -276,13 +353,14 @@
 		};
 		050622921F9CBA1B0015C539 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEDF5B6B4769FC5873AC7D56 /* Pods-Gaffiot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82T63N97ZX;
 				INFOPLIST_FILE = Gaffiot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lu.fresh.gaffiot.Gaffiot;
+				PRODUCT_BUNDLE_IDENTIFIER = lu.fresh.gaffiot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,13 +369,14 @@
 		};
 		050622931F9CBA1B0015C539 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15BD98B1D3A53FBA01D91A07 /* Pods-Gaffiot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82T63N97ZX;
 				INFOPLIST_FILE = Gaffiot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lu.fresh.gaffiot.Gaffiot;
+				PRODUCT_BUNDLE_IDENTIFIER = lu.fresh.gaffiot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
