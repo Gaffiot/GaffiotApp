@@ -8,18 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		050622801F9CBA1B0015C539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506227F1F9CBA1B0015C539 /* AppDelegate.swift */; };
-		050622821F9CBA1B0015C539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050622811F9CBA1B0015C539 /* ViewController.swift */; };
 		050622851F9CBA1B0015C539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050622831F9CBA1B0015C539 /* Main.storyboard */; };
 		050622881F9CBA1B0015C539 /* Gaffiot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 050622861F9CBA1B0015C539 /* Gaffiot.xcdatamodeld */; };
 		0506228A1F9CBA1B0015C539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050622891F9CBA1B0015C539 /* Assets.xcassets */; };
 		0506228D1F9CBA1B0015C539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0506228B1F9CBA1B0015C539 /* LaunchScreen.storyboard */; };
+		0506229A1F9D29B30015C539 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050622981F9D29B20015C539 /* Bundle.swift */; };
+		0506229C1F9D29BE0015C539 /* GaffiotStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506229B1F9D29BE0015C539 /* GaffiotStack.swift */; };
+		05FEEE001F9DE4D70070980A /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */; };
+		05FEEE021F9DE4FF0070980A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE011F9DE4FF0070980A /* ListTableViewController.swift */; };
+		05FEEE041F9DE5190070980A /* ListNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE031F9DE5190070980A /* ListNavigationViewController.swift */; };
+		05FEEE0A1F9DE64D0070980A /* Page+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE081F9DE64D0070980A /* Page+CoreDataClass.swift */; };
+		05FEEE0B1F9DE64D0070980A /* Page+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE091F9DE64D0070980A /* Page+CoreDataProperties.swift */; };
 		B058790C8A7730E7CE45DB66 /* Pods_Gaffiot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8506AEDC74C67BE76DF231 /* Pods_Gaffiot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0506227C1F9CBA1B0015C539 /* Gaffiot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gaffiot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0506227F1F9CBA1B0015C539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		050622811F9CBA1B0015C539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		050622841F9CBA1B0015C539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		050622871F9CBA1B0015C539 /* Gaffiot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gaffiot.xcdatamodel; sourceTree = "<group>"; };
 		050622891F9CBA1B0015C539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +33,14 @@
 		050622941F9CBC210015C539 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		050622951F9CBD7D0015C539 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		050622961F9CBD7D0015C539 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		050622981F9D29B20015C539 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		0506229B1F9D29BE0015C539 /* GaffiotStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaffiotStack.swift; sourceTree = "<group>"; };
+		05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
+		05FEEE011F9DE4FF0070980A /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		05FEEE031F9DE5190070980A /* ListNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavigationViewController.swift; sourceTree = "<group>"; };
+		05FEEE071F9DE61F0070980A /* Gaffiot 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gaffiot 2.xcdatamodel"; sourceTree = "<group>"; };
+		05FEEE081F9DE64D0070980A /* Page+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataClass.swift"; sourceTree = "<group>"; };
+		05FEEE091F9DE64D0070980A /* Page+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		15BD98B1D3A53FBA01D91A07 /* Pods-Gaffiot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gaffiot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot.release.xcconfig"; sourceTree = "<group>"; };
 		1D8506AEDC74C67BE76DF231 /* Pods_Gaffiot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gaffiot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDF5B6B4769FC5873AC7D56 /* Pods-Gaffiot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gaffiot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,8 +82,10 @@
 		0506227E1F9CBA1B0015C539 /* Gaffiot */ = {
 			isa = PBXGroup;
 			children = (
+				05FEEE0C1F9DE6520070980A /* Model */,
+				05FEEDFE1F9DE42C0070980A /* Helper */,
 				0506227F1F9CBA1B0015C539 /* AppDelegate.swift */,
-				050622811F9CBA1B0015C539 /* ViewController.swift */,
+				05FEEE051F9DE5E50070980A /* View Controller */,
 				050622831F9CBA1B0015C539 /* Main.storyboard */,
 				050622891F9CBA1B0015C539 /* Assets.xcassets */,
 				0506228B1F9CBA1B0015C539 /* LaunchScreen.storyboard */,
@@ -78,6 +93,42 @@
 				050622861F9CBA1B0015C539 /* Gaffiot.xcdatamodeld */,
 			);
 			path = Gaffiot;
+			sourceTree = "<group>";
+		};
+		05FEEDFE1F9DE42C0070980A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0506229B1F9D29BE0015C539 /* GaffiotStack.swift */,
+				050622981F9D29B20015C539 /* Bundle.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		05FEEE051F9DE5E50070980A /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */,
+				05FEEE061F9DE5EE0070980A /* List */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		05FEEE061F9DE5EE0070980A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				05FEEE011F9DE4FF0070980A /* ListTableViewController.swift */,
+				05FEEE031F9DE5190070980A /* ListNavigationViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		05FEEE0C1F9DE6520070980A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05FEEE081F9DE64D0070980A /* Page+CoreDataClass.swift */,
+				05FEEE091F9DE64D0070980A /* Page+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9551FB11665E91E3EAB07517 /* Pods */ = {
@@ -220,9 +271,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FEEE0B1F9DE64D0070980A /* Page+CoreDataProperties.swift in Sources */,
+				05FEEE041F9DE5190070980A /* ListNavigationViewController.swift in Sources */,
 				050622881F9CBA1B0015C539 /* Gaffiot.xcdatamodeld in Sources */,
-				050622821F9CBA1B0015C539 /* ViewController.swift in Sources */,
+				0506229A1F9D29B30015C539 /* Bundle.swift in Sources */,
 				050622801F9CBA1B0015C539 /* AppDelegate.swift in Sources */,
+				05FEEE0A1F9DE64D0070980A /* Page+CoreDataClass.swift in Sources */,
+				05FEEE001F9DE4D70070980A /* RootTabBarViewController.swift in Sources */,
+				0506229C1F9D29BE0015C539 /* GaffiotStack.swift in Sources */,
+				05FEEE021F9DE4FF0070980A /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +471,10 @@
 		050622861F9CBA1B0015C539 /* Gaffiot.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				05FEEE071F9DE61F0070980A /* Gaffiot 2.xcdatamodel */,
 				050622871F9CBA1B0015C539 /* Gaffiot.xcdatamodel */,
 			);
-			currentVersion = 050622871F9CBA1B0015C539 /* Gaffiot.xcdatamodel */;
+			currentVersion = 05FEEE071F9DE61F0070980A /* Gaffiot 2.xcdatamodel */;
 			path = Gaffiot.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
