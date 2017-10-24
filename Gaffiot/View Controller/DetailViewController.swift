@@ -66,7 +66,10 @@ class DetailViewController: UIViewController {
         content = content.replacingAll(matching: "\\\\up\\{([^\\}]+)\\}", with: "<sup>$1</sup>")
         content = content.replacingAll(matching: "\\|\\|", with: "|| <br>")
         
-        webView.loadHTMLString("<html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"><style>body{font-size:16px!important} b{font-size:22px} rub{font-size:22px; font-weight:bold; color:#1C92F6} aut{text-transform: uppercase;} pp{font-size:20px; font-weight:bold; color: red} qq{font-size:18px; font-weight:bold; margin-left: 16px; color: #bb4331} qq{font-size:18px; margin-left: 16px; color: #bb4331}</style></head><body style=\"position:relative;\"><b>\(word.latin!)</b>\(content!)<div style=\"background-color: #ccc; padding: 15px; margin-top:20px; position: absolute; bottom: 0;\"><strong>Source:</strong> &copy; Gérard Gréco 2015-2016 version komarov-1.1 du 2 mai 2016<br><strong>License:</strong> voir section <i>About</i></div></body></html>", baseURL: nil)
+        content = content.replacingAll(matching: "\\\\desv\\{([^\\}]+)\\}", with: "<i>$1</i>")
+        content = content.replacingAll(matching: "\\\\autz\\{([^\\}]+)\\}", with: "<aut>$1</aut>")
+        
+        webView.loadHTMLString("<html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"><style>body{font-size:16px!important} b{font-size:22px} rub{font-size:22px; font-weight:bold; color:#1C92F6} aut{text-transform: uppercase;} pp{font-size:20px; font-weight:bold; color: red} qq{font-size:18px; font-weight:bold; margin-left: 16px; color: #bb4331} qq{font-size:18px; margin-left: 16px; color: #bb4331}</style></head><body style=\"position:relative;\"><b>\(word.latin!)</b>\(content!)<br><br><br><br><br><br><br><br><div style=\"background-color: #ccc; padding: 15px; width:96%; margin-top:20px; position: absolute; bottom: 0;\"><strong>Source:</strong> &copy; Gérard Gréco 2015-2016 version komarov-1.1 du 2 mai 2016<br><strong>Licence:</strong> voir section <i>About</i></div></body></html>", baseURL: nil)
         // Do any additional setup after loading the view.
     }
 
