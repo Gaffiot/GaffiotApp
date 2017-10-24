@@ -10,10 +10,10 @@
 		050622801F9CBA1B0015C539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506227F1F9CBA1B0015C539 /* AppDelegate.swift */; };
 		050622851F9CBA1B0015C539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050622831F9CBA1B0015C539 /* Main.storyboard */; };
 		050622881F9CBA1B0015C539 /* Gaffiot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 050622861F9CBA1B0015C539 /* Gaffiot.xcdatamodeld */; };
-		0506228A1F9CBA1B0015C539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050622891F9CBA1B0015C539 /* Assets.xcassets */; };
 		0506228D1F9CBA1B0015C539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0506228B1F9CBA1B0015C539 /* LaunchScreen.storyboard */; };
 		0506229A1F9D29B30015C539 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050622981F9D29B20015C539 /* Bundle.swift */; };
 		0506229C1F9D29BE0015C539 /* GaffiotStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506229B1F9D29BE0015C539 /* GaffiotStack.swift */; };
+		053177EA1F9F85D800E50504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050622891F9CBA1B0015C539 /* Assets.xcassets */; };
 		053841411F9E90DD00C6118C /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538413F1F9E90DD00C6118C /* Word+CoreDataClass.swift */; };
 		053841421F9E90DD00C6118C /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053841401F9E90DD00C6118C /* Word+CoreDataProperties.swift */; };
 		053841441F9F2BF400C6118C /* gaffiot.json in Resources */ = {isa = PBXBuildFile; fileRef = 053841431F9F2BEC00C6118C /* gaffiot.json */; };
@@ -230,9 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053177EA1F9F85D800E50504 /* Assets.xcassets in Resources */,
 				053841441F9F2BF400C6118C /* gaffiot.json in Resources */,
 				0506228D1F9CBA1B0015C539 /* LaunchScreen.storyboard in Resources */,
-				0506228A1F9CBA1B0015C539 /* Assets.xcassets in Resources */,
 				0538414D1F9F64EC00C6118C /* Gaffiot.sqlite-wal in Resources */,
 				0538414B1F9F64E600C6118C /* Gaffiot.sqlite in Resources */,
 				050622851F9CBA1B0015C539 /* Main.storyboard in Resources */,
@@ -446,6 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82T63N97ZX;
 				INFOPLIST_FILE = Gaffiot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lu.fresh.gaffiot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,6 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82T63N97ZX;
 				INFOPLIST_FILE = Gaffiot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lu.fresh.gaffiot;
 				PRODUCT_NAME = "$(TARGET_NAME)";

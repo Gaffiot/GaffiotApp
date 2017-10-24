@@ -7,17 +7,23 @@
 //
 
 import UIKit
-import WebKit
 
 class DetailViewController: UIViewController {
     var word : Word!
-    @IBOutlet var webView: WKWebView!
+    @IBOutlet var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.navigationItem.title = word.latin
-        webView.loadHTMLString("<html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"></head><body><h1>\(word.latin!)</h1><p>\(word.french!)</p></body></html>", baseURL: nil)
+        let content : String! = word.french
+        do {
+            let regex = try NSRegularExpression(pattern: "\\es{([^}]+)}")
+            let newString = regex.stringByReplacingMatches(in: content, range: NSMakeRange(0, content.count), withTemplate: "<b>$1</b>")
+            print(newString)
+       
+        } catch {
+        }
+         webView.loadHTMLString("<html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"></head><body><h1>\(word.latin!)</h1><p>\(content!)</p></body></html>", baseURL: nil)
         // Do any additional setup after loading the view.
     }
 
