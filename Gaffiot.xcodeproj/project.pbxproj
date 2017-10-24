@@ -22,6 +22,7 @@
 		0538414D1F9F64EC00C6118C /* Gaffiot.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = 0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */; };
 		0538414F1F9F830600C6118C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538414E1F9F830600C6118C /* DetailViewController.swift */; };
 		05D1FB151F9FCF0C005E0CBB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1FB141F9FCF0B005E0CBB /* AboutViewController.swift */; };
+		05D1FB171F9FE2FD005E0CBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05D1FB161F9FE221005E0CBB /* GoogleService-Info.plist */; };
 		05FEEE001F9DE4D70070980A /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */; };
 		05FEEE021F9DE4FF0070980A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE011F9DE4FF0070980A /* ListTableViewController.swift */; };
 		05FEEE041F9DE5190070980A /* ListNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE031F9DE5190070980A /* ListNavigationViewController.swift */; };
@@ -238,6 +239,7 @@
 				0538414B1F9F64E600C6118C /* Gaffiot.sqlite in Resources */,
 				050622851F9CBA1B0015C539 /* Main.storyboard in Resources */,
 				0538414C1F9F64E800C6118C /* Gaffiot.sqlite-shm in Resources */,
+				05D1FB171F9FE2FD005E0CBB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
