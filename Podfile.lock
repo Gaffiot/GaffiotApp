@@ -19,10 +19,12 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - STRegex (1.1.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Firebase/Core
+  - STRegex (~> 1.1)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -32,8 +34,9 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: a4fc702b5a026f7322964376047f1a3f1f7cc6ff
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  STRegex: eb1f4c2fe9e2f0265b8df8634774cd8cd8914018
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: e68697fccb7d85097a4bd012500e6d4d76714f58
+PODFILE CHECKSUM: e7e2114f15632a8d2c29dfdf879ad6d49e6a5733
 
 COCOAPODS: 1.2.1
