@@ -16,13 +16,13 @@ class AboutViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        versionLabel.text = "Version \(Bundle.main.releaseVersionNumber!) (\(Bundle.main.buildVersionNumber!))"
-        
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
             AnalyticsParameterItemID: "About" as NSObject,
-            AnalyticsParameterItemName: "About" as NSObject,
+            AnalyticsParameterItemName: "about" as NSObject,
             AnalyticsParameterContentType: "about" as NSObject
             ])
+        
+        versionLabel.text = "Version \(Bundle.main.releaseVersionNumber!) (\(Bundle.main.buildVersionNumber!))"
         // Do any additional setup after loading the view.
     }
     

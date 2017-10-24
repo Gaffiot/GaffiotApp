@@ -51,6 +51,7 @@
 		0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaffiot.sqlite-wal"; sourceTree = "<group>"; };
 		0538414E1F9F830600C6118C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		05D1FB141F9FCF0B005E0CBB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		05D1FB161F9FE221005E0CBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		05FEEE011F9DE4FF0070980A /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		05FEEE031F9DE5190070980A /* ListNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavigationViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 				0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */,
 				050622891F9CBA1B0015C539 /* Assets.xcassets */,
 				0506228B1F9CBA1B0015C539 /* LaunchScreen.storyboard */,
+				05D1FB161F9FE221005E0CBB /* GoogleService-Info.plist */,
 				0506228E1F9CBA1B0015C539 /* Info.plist */,
 				050622861F9CBA1B0015C539 /* Gaffiot.xcdatamodeld */,
 			);

@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import Firebase
 import CoreData
 
 @UIApplicationMain
@@ -20,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         print(urls[urls.count - 1] as URL)
         

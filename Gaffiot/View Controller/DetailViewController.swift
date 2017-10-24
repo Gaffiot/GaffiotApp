@@ -8,6 +8,7 @@
 
 import UIKit
 import Regex
+import Firebase
 
 class DetailViewController: UIViewController {
     var word : Word!
@@ -17,6 +18,12 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = word.latin
         var content : String! = word.french
+        
+        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+            AnalyticsParameterItemID: "Detail-\(word.latinId!)" as NSObject,
+            AnalyticsParameterItemName: "Detail-\(word.latinId!)" as NSObject,
+            AnalyticsParameterContentType: "detail" as NSObject
+            ])
         
         //replacing all tags in content\raise-0.3ex\hbox{\arabe
         

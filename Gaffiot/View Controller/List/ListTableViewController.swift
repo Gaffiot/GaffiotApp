@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import CoreData
+import Firebase
 
 class ListTableViewController: UITableViewController, UISearchBarDelegate {
     var managedObjectContext: NSManagedObjectContext!
@@ -28,6 +29,14 @@ class ListTableViewController: UITableViewController, UISearchBarDelegate {
         
         return fetchedResultsController
     }()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+            AnalyticsParameterItemID: "List" as NSObject,
+            AnalyticsParameterItemName: "List" as NSObject,
+            AnalyticsParameterContentType: "list" as NSObject
+            ])
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
