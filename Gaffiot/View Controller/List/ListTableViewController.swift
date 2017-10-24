@@ -10,8 +10,10 @@ import UIKit
 import SwiftyJSON
 import CoreData
 
-class ListTableViewController: UITableViewController {
+class ListTableViewController: UITableViewController, UISearchBarDelegate {
     var managedObjectContext: NSManagedObjectContext!
+    private var search = ""
+    @IBOutlet var searchBar: UISearchBar!
     
     lazy var fetchedResultsController: NSFetchedResultsController<Word> = {
         // Initialize Fetch Request
@@ -30,6 +32,11 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let logo = UIImage(named: "gaffiot")
+        let imageView = UIImageView(image:logo)
+        imageView.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = imageView
+        
         do {
             try self.fetchedResultsController.performFetch()
         } catch {
@@ -42,6 +49,53 @@ class ListTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        print("searchText \(String(describing: searchBar.text))")
+        self.search(searchString: searchBar.text!)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("searchText \(String(describing: searchBar.text))")
+        self.search(searchString: searchBar.text!)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        print("searchText \(String(describing: searchBar.text))")
+        self.search(searchString: "")
+    }
+    
+    // called when text changes (including clear)
+    internal func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        searchBar.resignFirstResponder()
+        searchBar.text = ""
+        fetchedResultsController.fetchRequest.predicate = nil
+        do {
+            try self.fetchedResultsController.performFetch()
+        } catch {
+            let fetchError = error as NSError
+            print("\(fetchError), \(fetchError.userInfo)")
+        }
+        tableView.reloadData()
+    }
+    
+    
+    func search(searchString: String) {
+        self.search = searchString
+        var predicate:NSPredicate? = nil
+        if searchString.count != 0 {
+            predicate = NSPredicate(format: "latinId contains [cd] %@", searchString)
+        }
+        fetchedResultsController.fetchRequest.predicate = predicate
+        do {
+            try self.fetchedResultsController.performFetch()
+        } catch {
+            let fetchError = error as NSError
+            print("\(fetchError), \(fetchError.userInfo)")
+        }
+        self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,49 +122,13 @@ class ListTableViewController: UITableViewController {
         
         return cell
     }
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "show") {
+            let classVc = segue.destination as! DetailViewController
+            classVc.word = self.fetchedResultsController.object(at: tableView.indexPathForSelectedRow!) as Word
+        }
     }
-    */
 
 }

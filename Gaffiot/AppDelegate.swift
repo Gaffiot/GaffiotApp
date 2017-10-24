@@ -24,9 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         print(urls[urls.count - 1] as URL)
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 54 / 255.0, green: 103 / 255.0, blue: 151 / 255.0, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red:0.11, green:0.57, blue:0.96, alpha:1.0)
         UINavigationBar.appearance().tintColor = UIColor.white
-        UITabBar.appearance().tintColor = UIColor(red: 88 / 255.0, green: 152 / 255.0, blue: 214 / 255.0, alpha: 1.0)
+        UITabBar.appearance().tintColor = UIColor(red:0.11, green:0.57, blue:0.96, alpha:1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
         

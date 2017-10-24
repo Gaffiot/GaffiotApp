@@ -17,20 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gaffiot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyI-9c-9ya">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.28235294119999998" green="0.51764705879999995" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gaffiot" translatesAutoresizingMaskIntoConstraints="NO" id="juZ-dM-ecQ">
+                                <rect key="frame" x="75" y="282" width="224" height="103"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.57254901960000004" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SyI-9c-9ya" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="K5d-7p-XwJ"/>
-                            <constraint firstItem="SyI-9c-9ya" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TAb-Ub-1v9"/>
-                            <constraint firstItem="SyI-9c-9ya" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cX2-lp-aVy"/>
-                            <constraint firstAttribute="trailing" secondItem="SyI-9c-9ya" secondAttribute="trailing" id="dKQ-A5-9XF"/>
+                            <constraint firstItem="juZ-dM-ecQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="5uM-z4-cL8"/>
+                            <constraint firstItem="juZ-dM-ecQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7TS-NV-zfD"/>
+                            <constraint firstItem="juZ-dM-ecQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8dJ-Oz-R1g"/>
+                            <constraint firstItem="juZ-dM-ecQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="262" id="irB-qj-blE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -40,4 +36,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gaffiot" width="1024" height="361"/>
+    </resources>
 </document>
