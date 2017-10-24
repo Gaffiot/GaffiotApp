@@ -14,11 +14,16 @@
 		0506228D1F9CBA1B0015C539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0506228B1F9CBA1B0015C539 /* LaunchScreen.storyboard */; };
 		0506229A1F9D29B30015C539 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050622981F9D29B20015C539 /* Bundle.swift */; };
 		0506229C1F9D29BE0015C539 /* GaffiotStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506229B1F9D29BE0015C539 /* GaffiotStack.swift */; };
+		053841411F9E90DD00C6118C /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538413F1F9E90DD00C6118C /* Word+CoreDataClass.swift */; };
+		053841421F9E90DD00C6118C /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053841401F9E90DD00C6118C /* Word+CoreDataProperties.swift */; };
+		053841441F9F2BF400C6118C /* gaffiot.json in Resources */ = {isa = PBXBuildFile; fileRef = 053841431F9F2BEC00C6118C /* gaffiot.json */; };
+		053841471F9F348500C6118C /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053841461F9F348500C6118C /* ImportViewController.swift */; };
+		0538414B1F9F64E600C6118C /* Gaffiot.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 053841481F9F64E200C6118C /* Gaffiot.sqlite */; };
+		0538414C1F9F64E800C6118C /* Gaffiot.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = 053841491F9F64E200C6118C /* Gaffiot.sqlite-shm */; };
+		0538414D1F9F64EC00C6118C /* Gaffiot.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = 0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */; };
 		05FEEE001F9DE4D70070980A /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */; };
 		05FEEE021F9DE4FF0070980A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE011F9DE4FF0070980A /* ListTableViewController.swift */; };
 		05FEEE041F9DE5190070980A /* ListNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE031F9DE5190070980A /* ListNavigationViewController.swift */; };
-		05FEEE0A1F9DE64D0070980A /* Page+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE081F9DE64D0070980A /* Page+CoreDataClass.swift */; };
-		05FEEE0B1F9DE64D0070980A /* Page+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE091F9DE64D0070980A /* Page+CoreDataProperties.swift */; };
 		B058790C8A7730E7CE45DB66 /* Pods_Gaffiot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8506AEDC74C67BE76DF231 /* Pods_Gaffiot.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,12 +40,19 @@
 		050622961F9CBD7D0015C539 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		050622981F9D29B20015C539 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		0506229B1F9D29BE0015C539 /* GaffiotStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaffiotStack.swift; sourceTree = "<group>"; };
+		0538413A1F9E905C00C6118C /* Gaffiot 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gaffiot 3.xcdatamodel"; sourceTree = "<group>"; };
+		0538413F1F9E90DD00C6118C /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
+		053841401F9E90DD00C6118C /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		053841431F9F2BEC00C6118C /* gaffiot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gaffiot.json; sourceTree = "<group>"; };
+		053841451F9F335C00C6118C /* Gaffiot 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gaffiot 4.xcdatamodel"; sourceTree = "<group>"; };
+		053841461F9F348500C6118C /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
+		053841481F9F64E200C6118C /* Gaffiot.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gaffiot.sqlite; sourceTree = "<group>"; };
+		053841491F9F64E200C6118C /* Gaffiot.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaffiot.sqlite-shm"; sourceTree = "<group>"; };
+		0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaffiot.sqlite-wal"; sourceTree = "<group>"; };
 		05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		05FEEE011F9DE4FF0070980A /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		05FEEE031F9DE5190070980A /* ListNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavigationViewController.swift; sourceTree = "<group>"; };
 		05FEEE071F9DE61F0070980A /* Gaffiot 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gaffiot 2.xcdatamodel"; sourceTree = "<group>"; };
-		05FEEE081F9DE64D0070980A /* Page+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataClass.swift"; sourceTree = "<group>"; };
-		05FEEE091F9DE64D0070980A /* Page+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		15BD98B1D3A53FBA01D91A07 /* Pods-Gaffiot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gaffiot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot.release.xcconfig"; sourceTree = "<group>"; };
 		1D8506AEDC74C67BE76DF231 /* Pods_Gaffiot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gaffiot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDF5B6B4769FC5873AC7D56 /* Pods-Gaffiot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gaffiot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gaffiot/Pods-Gaffiot.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,11 +94,15 @@
 		0506227E1F9CBA1B0015C539 /* Gaffiot */ = {
 			isa = PBXGroup;
 			children = (
+				0506227F1F9CBA1B0015C539 /* AppDelegate.swift */,
 				05FEEE0C1F9DE6520070980A /* Model */,
 				05FEEDFE1F9DE42C0070980A /* Helper */,
-				0506227F1F9CBA1B0015C539 /* AppDelegate.swift */,
 				05FEEE051F9DE5E50070980A /* View Controller */,
 				050622831F9CBA1B0015C539 /* Main.storyboard */,
+				053841431F9F2BEC00C6118C /* gaffiot.json */,
+				053841481F9F64E200C6118C /* Gaffiot.sqlite */,
+				053841491F9F64E200C6118C /* Gaffiot.sqlite-shm */,
+				0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */,
 				050622891F9CBA1B0015C539 /* Assets.xcassets */,
 				0506228B1F9CBA1B0015C539 /* LaunchScreen.storyboard */,
 				0506228E1F9CBA1B0015C539 /* Info.plist */,
@@ -108,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */,
+				053841461F9F348500C6118C /* ImportViewController.swift */,
 				05FEEE061F9DE5EE0070980A /* List */,
 			);
 			path = "View Controller";
@@ -125,8 +142,8 @@
 		05FEEE0C1F9DE6520070980A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				05FEEE081F9DE64D0070980A /* Page+CoreDataClass.swift */,
-				05FEEE091F9DE64D0070980A /* Page+CoreDataProperties.swift */,
+				0538413F1F9E90DD00C6118C /* Word+CoreDataClass.swift */,
+				053841401F9E90DD00C6118C /* Word+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,9 +227,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053841441F9F2BF400C6118C /* gaffiot.json in Resources */,
 				0506228D1F9CBA1B0015C539 /* LaunchScreen.storyboard in Resources */,
 				0506228A1F9CBA1B0015C539 /* Assets.xcassets in Resources */,
+				0538414D1F9F64EC00C6118C /* Gaffiot.sqlite-wal in Resources */,
+				0538414B1F9F64E600C6118C /* Gaffiot.sqlite in Resources */,
 				050622851F9CBA1B0015C539 /* Main.storyboard in Resources */,
+				0538414C1F9F64E800C6118C /* Gaffiot.sqlite-shm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,13 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05FEEE0B1F9DE64D0070980A /* Page+CoreDataProperties.swift in Sources */,
+				053841421F9E90DD00C6118C /* Word+CoreDataProperties.swift in Sources */,
+				053841411F9E90DD00C6118C /* Word+CoreDataClass.swift in Sources */,
 				05FEEE041F9DE5190070980A /* ListNavigationViewController.swift in Sources */,
 				050622881F9CBA1B0015C539 /* Gaffiot.xcdatamodeld in Sources */,
 				0506229A1F9D29B30015C539 /* Bundle.swift in Sources */,
 				050622801F9CBA1B0015C539 /* AppDelegate.swift in Sources */,
-				05FEEE0A1F9DE64D0070980A /* Page+CoreDataClass.swift in Sources */,
 				05FEEE001F9DE4D70070980A /* RootTabBarViewController.swift in Sources */,
+				053841471F9F348500C6118C /* ImportViewController.swift in Sources */,
 				0506229C1F9D29BE0015C539 /* GaffiotStack.swift in Sources */,
 				05FEEE021F9DE4FF0070980A /* ListTableViewController.swift in Sources */,
 			);
@@ -471,10 +493,12 @@
 		050622861F9CBA1B0015C539 /* Gaffiot.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				053841451F9F335C00C6118C /* Gaffiot 4.xcdatamodel */,
+				0538413A1F9E905C00C6118C /* Gaffiot 3.xcdatamodel */,
 				05FEEE071F9DE61F0070980A /* Gaffiot 2.xcdatamodel */,
 				050622871F9CBA1B0015C539 /* Gaffiot.xcdatamodel */,
 			);
-			currentVersion = 05FEEE071F9DE61F0070980A /* Gaffiot 2.xcdatamodel */;
+			currentVersion = 053841451F9F335C00C6118C /* Gaffiot 4.xcdatamodel */;
 			path = Gaffiot.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

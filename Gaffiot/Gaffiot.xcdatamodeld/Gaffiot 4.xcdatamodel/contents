@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Word" representedClassName=".Word" syncable="YES">
+        <attribute name="favorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latinId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wordId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Word" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>

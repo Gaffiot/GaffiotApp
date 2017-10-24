@@ -1,5 +1,5 @@
 //
-//  Page+CoreDataClass.swift
+//  Word+CoreDataClass.swift
 //  Gaffiot
 //
 //  Created by Benoît Frisch on 23/10/2017.
@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 
-public class Page: NSManagedObject {
+public class Word: NSManagedObject {
 
 }

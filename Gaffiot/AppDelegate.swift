@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import SwiftyJSON
 import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    private var words: JSON! = nil
     var persistentContainer: NSPersistentContainer!
+    var managedObjectContext: NSManagedObjectContext!
     var window: UIWindow?
 
 
@@ -26,19 +29,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor(red: 88 / 255.0, green: 152 / 255.0, blue: 214 / 255.0, alpha: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
+        
         createGaffiotContainer(){ container in
             self.persistentContainer = container
+            self.managedObjectContext = container.viewContext
+            
             let storyboard = self.window?.rootViewController?.storyboard
-            guard let vc = storyboard?.instantiateViewController(withIdentifier: "RootView") as? RootTabBarViewController
+            guard let vc = storyboard?.instantiateViewController(withIdentifier: "RootTab") as? RootTabBarViewController
                 else {
                     fatalError("Cannot instantiate root view controller")
             }
             vc.managedObjectContext = container.viewContext
             self.window?.rootViewController = vc
+            
         }
         return true
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

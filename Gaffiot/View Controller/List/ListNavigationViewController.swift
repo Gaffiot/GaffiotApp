@@ -17,8 +17,6 @@ class ListNavigationViewController: UINavigationController {
         
         let controller = self.viewControllers[0] as! ListTableViewController
         controller.managedObjectContext = managedObjectContext
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {

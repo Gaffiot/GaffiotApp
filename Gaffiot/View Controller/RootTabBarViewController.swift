@@ -15,8 +15,9 @@ class RootTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let averageController = self.viewControllers![0] as! ListNavigationViewController
-        averageController.managedObjectContext = managedObjectContext
+        let list = self.viewControllers![0] as! ListNavigationViewController
+        list.managedObjectContext = managedObjectContext
+        
     }
 
     override func didReceiveMemoryWarning() {
