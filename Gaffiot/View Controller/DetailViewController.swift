@@ -30,6 +30,7 @@ class DetailViewController: UIViewController {
         content = content.replacingAll(matching: "\\\\autp\\{([^\\}]+)\\}", with: "<aut>$1</aut>")
         content = content.replacingAll(matching: "\\\\cl\\{([^\\}]+)\\}", with: "<i>$1</i>")
         content = content.replacingAll(matching: "\\\\comm\\{([^\\}]+)\\}", with: "")
+        content = content.replacingAll(matching: "\\\\des\\{([^\\}]+)\\}", with: "<i>$1</i>")
         content = content.replacingAll(matching: "\\\\el\\{([^\\}]+)\\}", with: "<i>$1</i>")
         content = content.replacingAll(matching: "\\\\es\\{([^\\}]+)\\}", with: "<b>$1</b>")
         content = content.replacingAll(matching: "\\\\etymgr\\{([^\\}]+)\\}", with: "$1")
@@ -53,9 +54,9 @@ class DetailViewController: UIViewController {
         content = content.replacingAll(matching: "\\\\par", with: "<br><br>")
         content = content.replacingAll(matching: "\\\\pc\\{([^\\}]+)\\}", with: "<aut>$1</aut>")
         content = content.replacingAll(matching: "\\\\pca\\{([^\\}]+)\\}", with: "<aut>$1</aut>")
-        content = content.replacingAll(matching: "\\\\pp\\{([^\\}]+)\\}", with: "<br><pp>&para; $1</pp>")
-        content = content.replacingAll(matching: "\\\\qq\\{([^\\}]+)\\}", with: "<br><qq>$1</qq>")
-        content = content.replacingAll(matching: "\\\\qqng\\{([^\\}]+)\\}", with: "<br><qqng>$1</qqng>")
+        content = content.replacingAll(matching: "\\\\pp\\{([^\\}]+)\\}", with: "<br><br><pp>&para; $1</pp>")
+        content = content.replacingAll(matching: "\\\\qq\\{([^\\}]+)\\}", with: "<br><br><qq>$1</qq>")
+        content = content.replacingAll(matching: "\\\\qqng\\{([^\\}]+)\\}", with: "<br><br><qqng>$1</qqng>")
         content = content.replacingAll(matching: "\\\\refch\\{([^\\}]+)\\}", with: "<i>$1</i>")
         content = content.replacingAll(matching: "\\\\refchp\\{([^\\}]+)\\}", with: "<i>$1</i>")
         content = content.replacingAll(matching: "\\\\refgaf\\{([^\\}]+)\\}", with: "<i>$1</i>")
@@ -63,9 +64,9 @@ class DetailViewController: UIViewController {
         content = content.replacingAll(matching: "\\\\rub\\{([^\\}]+)\\}", with: "<rub>$1</rub>")
         content = content.replacingAll(matching: "\\\\S", with: "&sect;")
         content = content.replacingAll(matching: "\\\\up\\{([^\\}]+)\\}", with: "<sup>$1</sup>")
-        content = content.replacingAll(matching: "||", with: "|| <br>")
+        content = content.replacingAll(matching: "\\|\\|", with: "|| <br>")
         
-        webView.loadHTMLString("<html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"><style>b {font-size:22px} rub{font-size:22px; font-weight:bold; color:#1C92F6} aut{text-transform: uppercase;} pp{font-size:20px; font-weight:bold; color: red} qq{font-size:18px; font-weight:bold; margin-left: 16px; color: #bb4331} qq{font-size:18px; margin-left: 16px; color: #bb4331}</style></head><body><b>\(word.latin!)</b>\(content!)</body></html>", baseURL: nil)
+        webView.loadHTMLString("<html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"><style>body{font-size:16px!important} b{font-size:22px} rub{font-size:22px; font-weight:bold; color:#1C92F6} aut{text-transform: uppercase;} pp{font-size:20px; font-weight:bold; color: red} qq{font-size:18px; font-weight:bold; margin-left: 16px; color: #bb4331} qq{font-size:18px; margin-left: 16px; color: #bb4331}</style></head><body style=\"position:relative;\"><b>\(word.latin!)</b>\(content!)<div style=\"background-color: #ccc; padding: 15px; margin-top:20px; position: absolute; bottom: 0; font-size: 10px\"><strong>Source:</strong> &copy; Gérard Gréco 2015-2016 version komarov-1.1 du 2 mai 2016<br><strong>License:</strong> voir section <i>About</i></div></body></html>", baseURL: nil)
         // Do any additional setup after loading the view.
     }
 

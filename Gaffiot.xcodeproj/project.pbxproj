@@ -22,6 +22,7 @@
 		0538414C1F9F64E800C6118C /* Gaffiot.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = 053841491F9F64E200C6118C /* Gaffiot.sqlite-shm */; };
 		0538414D1F9F64EC00C6118C /* Gaffiot.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = 0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */; };
 		0538414F1F9F830600C6118C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538414E1F9F830600C6118C /* DetailViewController.swift */; };
+		05D1FB151F9FCF0C005E0CBB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1FB141F9FCF0B005E0CBB /* AboutViewController.swift */; };
 		05FEEE001F9DE4D70070980A /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */; };
 		05FEEE021F9DE4FF0070980A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE011F9DE4FF0070980A /* ListTableViewController.swift */; };
 		05FEEE041F9DE5190070980A /* ListNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEE031F9DE5190070980A /* ListNavigationViewController.swift */; };
@@ -51,6 +52,7 @@
 		053841491F9F64E200C6118C /* Gaffiot.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaffiot.sqlite-shm"; sourceTree = "<group>"; };
 		0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaffiot.sqlite-wal"; sourceTree = "<group>"; };
 		0538414E1F9F830600C6118C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		05D1FB141F9FCF0B005E0CBB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		05FEEE011F9DE4FF0070980A /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		05FEEE031F9DE5190070980A /* ListNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavigationViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */,
 				053841461F9F348500C6118C /* ImportViewController.swift */,
 				0538414E1F9F830600C6118C /* DetailViewController.swift */,
+				05D1FB141F9FCF0B005E0CBB /* AboutViewController.swift */,
 				05FEEE061F9DE5EE0070980A /* List */,
 			);
 			path = "View Controller";
@@ -301,6 +304,7 @@
 				05FEEE041F9DE5190070980A /* ListNavigationViewController.swift in Sources */,
 				050622881F9CBA1B0015C539 /* Gaffiot.xcdatamodeld in Sources */,
 				0506229A1F9D29B30015C539 /* Bundle.swift in Sources */,
+				05D1FB151F9FCF0C005E0CBB /* AboutViewController.swift in Sources */,
 				050622801F9CBA1B0015C539 /* AppDelegate.swift in Sources */,
 				05FEEE001F9DE4D70070980A /* RootTabBarViewController.swift in Sources */,
 				053841471F9F348500C6118C /* ImportViewController.swift in Sources */,
