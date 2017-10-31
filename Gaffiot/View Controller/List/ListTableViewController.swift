@@ -95,7 +95,7 @@ class ListTableViewController: UITableViewController, UISearchBarDelegate {
         self.search = searchString
         var predicate:NSPredicate? = nil
         if searchString.count != 0 {
-            predicate = NSPredicate(format: "latinId contains [cd] %@", searchString)
+            predicate = NSPredicate(format: "(latinId BEGINSWITH [c] %@) OR (latinId BEGINSWITH [c] %@) OR (latinId BEGINSWITH [c] %@) OR (latinId BEGINSWITH [c] %@) OR (latinId BEGINSWITH [c] %@) OR (latinId BEGINSWITH [c] %@)", searchString, "1 "+searchString, "2 "+searchString, "3 "+searchString, "4 "+searchString, "5 "+searchString)
         }
         fetchedResultsController.fetchRequest.predicate = predicate
         do {
