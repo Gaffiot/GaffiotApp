@@ -14,7 +14,7 @@ class DetailViewController: UIViewController {
     var word : Word!
     @IBOutlet var webView: UIWebView!
     
-    override func viewDidLoad() {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
         self.navigationItem.title = word.latin
         var content : String! = word.french

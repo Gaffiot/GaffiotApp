@@ -103,8 +103,6 @@ Carthage/Build.rbenv-vars
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 /Gaffiot/GoogleService-Info.plist
-
-
 GoogleService-Info.plist
 
 gaffiot.json

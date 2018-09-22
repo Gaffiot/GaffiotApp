@@ -31,16 +31,16 @@ class AboutViewController: UITableViewController {
         let alertController = UIAlertController(title: "GitHub", message: "", preferredStyle: .alert)
         
         // Create the actions
-        let okAction = UIAlertAction(title: "Open", style: UIAlertActionStyle.default) {
+        let okAction = UIAlertAction(title: "Open", style: UIAlertAction.Style.default) {
             UIAlertAction in
             if #available(iOS 10.0, *) {
-                UIApplication.shared.open(URL(string:"https://github.com/Gaffiot/GaffiotApp")!, options: [:], completionHandler: nil)
+                UIApplication.shared.open(URL(string:"https://github.com/Gaffiot/GaffiotApp")!, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
             } else {
                 UIApplication.shared.openURL(URL(string:
                     "https://github.com/Gaffiot/GaffiotApp")!)
             }
         }
-        let cancelAction = UIAlertAction(title: "Annuler", style: UIAlertActionStyle.cancel) {
+        let cancelAction = UIAlertAction(title: "Annuler", style: UIAlertAction.Style.cancel) {
             UIAlertAction in
             NSLog("Cancel Pressed")
         }
@@ -58,4 +58,9 @@ class AboutViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }
