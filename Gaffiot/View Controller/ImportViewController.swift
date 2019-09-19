@@ -35,7 +35,7 @@ class ImportViewController: UIViewController {
         do {
             let content = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
             if let dataFromString = content.data(using: .utf8, allowLossyConversion: false) {
-                self.words = JSON(data: dataFromString)
+                self.words = try JSON(data: dataFromString)
             }
         } catch {
         }
