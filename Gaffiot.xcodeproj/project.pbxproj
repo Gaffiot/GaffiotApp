@@ -21,6 +21,16 @@
 		0538414C1F9F64E800C6118C /* Gaffiot.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = 053841491F9F64E200C6118C /* Gaffiot.sqlite-shm */; };
 		0538414D1F9F64EC00C6118C /* Gaffiot.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = 0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */; };
 		0538414F1F9F830600C6118C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538414E1F9F830600C6118C /* DetailViewController.swift */; };
+		05BBB28F2333CD58007F221B /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB28E2333CD58007F221B /* FirebaseCore.framework */; };
+		05BBB2912333CD58007F221B /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB2902333CD58007F221B /* FirebaseCoreDiagnostics.framework */; };
+		05BBB2932333CD58007F221B /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB2922333CD58007F221B /* FirebaseInstanceID.framework */; };
+		05BBB2952333CD58007F221B /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB2942333CD58007F221B /* GoogleDataTransport.framework */; };
+		05BBB2972333CD58007F221B /* GoogleDataTransportCCTSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB2962333CD58007F221B /* GoogleDataTransportCCTSupport.framework */; };
+		05BBB2992333CD58007F221B /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB2982333CD58007F221B /* GoogleUtilities.framework */; };
+		05BBB29B2333CD58007F221B /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB29A2333CD58007F221B /* nanopb.framework */; };
+		05BBB29D2333CD58007F221B /* Pods_Gaffiot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB29C2333CD58007F221B /* Pods_Gaffiot.framework */; };
+		05BBB29F2333CD58007F221B /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB29E2333CD58007F221B /* Regex.framework */; };
+		05BBB2A12333CD58007F221B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBB2A02333CD58007F221B /* SwiftyJSON.framework */; };
 		05D1FB151F9FCF0C005E0CBB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1FB141F9FCF0B005E0CBB /* AboutViewController.swift */; };
 		05D1FB171F9FE2FD005E0CBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05D1FB161F9FE221005E0CBB /* GoogleService-Info.plist */; };
 		05FEEE001F9DE4D70070980A /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */; };
@@ -51,6 +61,16 @@
 		053841491F9F64E200C6118C /* Gaffiot.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaffiot.sqlite-shm"; sourceTree = "<group>"; };
 		0538414A1F9F64E200C6118C /* Gaffiot.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaffiot.sqlite-wal"; sourceTree = "<group>"; };
 		0538414E1F9F830600C6118C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		05BBB28E2333CD58007F221B /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BBB2902333CD58007F221B /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BBB2922333CD58007F221B /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BBB2942333CD58007F221B /* GoogleDataTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BBB2962333CD58007F221B /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransportCCTSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BBB2982333CD58007F221B /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BBB29A2333CD58007F221B /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BBB29C2333CD58007F221B /* Pods_Gaffiot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Gaffiot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BBB29E2333CD58007F221B /* Regex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Regex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BBB2A02333CD58007F221B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D1FB141F9FCF0B005E0CBB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		05D1FB161F9FE221005E0CBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05FEEDFF1F9DE4D60070980A /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +87,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BBB28F2333CD58007F221B /* FirebaseCore.framework in Frameworks */,
+				05BBB2912333CD58007F221B /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				05BBB2932333CD58007F221B /* FirebaseInstanceID.framework in Frameworks */,
+				05BBB2952333CD58007F221B /* GoogleDataTransport.framework in Frameworks */,
+				05BBB2972333CD58007F221B /* GoogleDataTransportCCTSupport.framework in Frameworks */,
+				05BBB2992333CD58007F221B /* GoogleUtilities.framework in Frameworks */,
+				05BBB29B2333CD58007F221B /* nanopb.framework in Frameworks */,
+				05BBB29D2333CD58007F221B /* Pods_Gaffiot.framework in Frameworks */,
+				05BBB29F2333CD58007F221B /* Regex.framework in Frameworks */,
+				05BBB2A12333CD58007F221B /* SwiftyJSON.framework in Frameworks */,
 				B058790C8A7730E7CE45DB66 /* Pods_Gaffiot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +196,16 @@
 		FBFA95D4238133C0EACA83C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05BBB28E2333CD58007F221B /* FirebaseCore.framework */,
+				05BBB2902333CD58007F221B /* FirebaseCoreDiagnostics.framework */,
+				05BBB2922333CD58007F221B /* FirebaseInstanceID.framework */,
+				05BBB2942333CD58007F221B /* GoogleDataTransport.framework */,
+				05BBB2962333CD58007F221B /* GoogleDataTransportCCTSupport.framework */,
+				05BBB2982333CD58007F221B /* GoogleUtilities.framework */,
+				05BBB29A2333CD58007F221B /* nanopb.framework */,
+				05BBB29C2333CD58007F221B /* Pods_Gaffiot.framework */,
+				05BBB29E2333CD58007F221B /* Regex.framework */,
+				05BBB2A02333CD58007F221B /* SwiftyJSON.framework */,
 				1D8506AEDC74C67BE76DF231 /* Pods_Gaffiot.framework */,
 			);
 			name = Frameworks;
@@ -205,7 +245,7 @@
 				TargetAttributes = {
 					0506227B1F9CBA1B0015C539 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -456,7 +496,7 @@
 				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = lu.fresh.gaffiot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -474,7 +514,7 @@
 				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = lu.fresh.gaffiot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

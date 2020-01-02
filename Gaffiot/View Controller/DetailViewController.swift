@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Regex
 import Firebase
+import Regex
 
 class DetailViewController: UIViewController {
     var word : Word!
